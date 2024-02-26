@@ -1,0 +1,143 @@
+/* PROJECTS */
+.projects {
+  width: 100%;
+  max-width: 998px;
+  height: calc(100vh - var(--margin-projects));
+  padding: var(--external-margin);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: var(--margin-projects);
+}
+
+.projects {
+  justify-content: flex-start;
+}
+
+.projects_container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.projects_header {
+  padding-bottom: 30px;
+  margin: 0 10px;
+}
+
+.projects h2,
+.projects h3,
+.projects p {
+  width: 100%;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.projects p {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--box-background);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.projects h3 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.highlights_container,
+.all_projects_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.all_projects_container {
+  padding-bottom: 100px;
+}
+
+.project {
+  max-width: 400px;
+  cursor: pointer;
+  background-color: var(--background-color);
+  border-radius: 15px;
+  margin: 5px;
+  overflow: hidden;
+  border: 1px solid var(--color);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+
+.project img {
+  width: 100%;
+  align-self: center;
+  opacity: 0.8;
+  transition: all 0.2s;
+}
+
+@media (max-width: 768px) {
+  .project img {
+    opacity: 1;
+  }
+}
+
+.project:hover img {
+  width: 101%;
+  opacity: 1;
+}
+
+.project p {
+  text-align: center;
+  border-radius: 0 !important;
+  background-color: var(--font-color) !important;
+  margin: 0 !important;
+  padding: 10px 0 !important;
+  font-weight: 300 !important;
+  box-shadow: none !important;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.project_lable p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px !important;
+  gap: 5px;
+}
+
+.titles {
+  color: var(--background-color) !important;
+  line-height: 1rem;
+}
+
+.project_icon {
+  align-self: center;
+  display: flex;
+  gap: 5px;
+}
+
+.project_icon img {
+  opacity: 1;
+  height: 20px;
+}
+
+.nextjs {
+  height: 12px !important;
+  align-self: center;
+}
