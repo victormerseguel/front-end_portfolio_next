@@ -117,10 +117,25 @@
   fill: var(--box-background);
 }
 
-/* ------------------------------------------------------------------ */
-
-/* HIDE ITEMS */
-
 .hide {
   display: none !important;
+}
+
+.break {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px !important;
+  margin-top: -5px;
+}
+
+@media (max-width: 410px) {
+  .name h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 327px) {
+  .name h2 {
+    font-size: 1.5rem;
+  }
 }

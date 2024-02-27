@@ -11,6 +11,9 @@ import HomeSection from "@/components/HomeSection";
 import Projects from "@/components/Projects";
 import Info from "@/components/Info";
 import Contacts from "@/components/Contacts";
+import Bars from "@/components/Bars";
+import Controls from "@/components/Controls";
+import MobileMenu from "@/components/MobileMenu";
 
 export default function Home() {
   return (
@@ -26,6 +29,9 @@ export default function Home() {
             <Info />
             <Contacts />
           </main>
+          <Bars />
+          <Controls />
+          <MobileMenu />
         </div>
       </ContextProvider>
     </>

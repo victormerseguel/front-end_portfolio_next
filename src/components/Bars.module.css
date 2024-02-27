@@ -1,0 +1,20 @@
+.top_bar,
+.bottom_bar {
+  display: block;
+  height: calc(var(--external-margin) + 1px);
+  width: calc(100% - calc(var(--external-margin) * 2));
+  margin-left: var(--external-margin);
+  background-color: var(--background-color);
+  position: absolute;
+  z-index: 1;
+}
+
+.top_bar {
+  top: 0px;
+  border-bottom: 1px solid var(--color);
+}
+
+.bottom_bar {
+  bottom: 0px;
+  border-top: 1px solid var(--color);
+}

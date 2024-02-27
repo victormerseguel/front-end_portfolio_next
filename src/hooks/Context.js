@@ -7,6 +7,9 @@ export const ContextProvider = ({ children }) => {
   const [language, setLanguage] = useState("pt");
   const [currentMenu, setCurrentMenu] = useState("contacts");
   const [mobile, setMobile] = useState(false);
+  const [menuMobile, setMenuMobile] = useState(false);
+  const [theme, setTheme] = useState("light");
+  const [animate, setAnimate] = useState(false);
 
   return (
     <Context.Provider
@@ -19,6 +22,12 @@ export const ContextProvider = ({ children }) => {
         setCurrentMenu,
         mobile,
         setMobile,
+        theme,
+        setTheme,
+        menuMobile,
+        setMenuMobile,
+        animate,
+        setAnimate,
       }}
     >
       {children}

@@ -3,7 +3,7 @@ import styles from "../../components/Nav.module.css";
 const GitHub = ({ size, mobile }) => {
   return (
     <a href="https://github.com/victormerseguel" target="_blank">
-      <button className={mobile ? styles.hide : null}>
+      <button>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 32 32"

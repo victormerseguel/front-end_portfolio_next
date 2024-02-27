@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { infos_db, navItems_db, navbar_db } from "@/databases/texts";
 
 const Info = () => {
-  const { language, currentMenu } = useContext(Context);
+  const { language, currentMenu, setCurrentMenu } = useContext(Context);
 
   return (
     <>
@@ -16,7 +16,12 @@ const Info = () => {
             {infos_db[0][language].split("\n").map((item) => (
               <p key={item}>{item}</p>
             ))}
-            <p className={styles.learn_more}>{infos_db[1][language]}</p>
+            <p
+              className={styles.learn_more}
+              onClick={() => setCurrentMenu("contacts")}
+            >
+              {infos_db[1][language]}
+            </p>
           </div>
         </section>
       )}

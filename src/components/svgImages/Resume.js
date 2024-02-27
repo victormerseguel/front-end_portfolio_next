@@ -3,7 +3,7 @@ import styles from "../../components/Nav.module.css";
 const Resume = ({ size, mobile }) => {
   return (
     <a href="./assets/resume_front-end.pdf" target="_blank">
-      <button className={mobile ? styles.hide : null}>
+      <button>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 256 256"

@@ -1,8 +1,10 @@
+import { useContext } from "react";
 import styles from "../../components/Nav.module.css";
+import { Context } from "@/hooks/Context";
 
-const MenuMobile = ({ mobile }) => {
+const MenuMobile = ({ click }) => {
   return (
-    <button className={!mobile ? styles.hide : null}>
+    <button onClick={() => click()}>
       <svg
         fill="#000000"
         height="28px"

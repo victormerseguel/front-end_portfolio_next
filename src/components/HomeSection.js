@@ -6,7 +6,7 @@ import { home_db, navItems_db } from "@/databases/texts";
 import parse from "html-react-parser";
 
 const HomeSection = () => {
-  const { language, currentMenu } = useContext(Context);
+  const { language, currentMenu, setCurrentMenu } = useContext(Context);
 
   return (
     <>
@@ -16,7 +16,12 @@ const HomeSection = () => {
             {home_db[0][language].split("\n").map((item, i) => (
               <p key={i}>{parse(item)}</p>
             ))}
-            <p className={styles.learn_more}>{home_db[1][language]}</p>
+            <p
+              className={styles.learn_more}
+              onClick={() => setCurrentMenu("about")}
+            >
+              {home_db[1][language]}
+            </p>
           </div>
         </section>
       )}

@@ -1,0 +1,101 @@
+.nav {
+  width: calc(100vw - calc(var(--external-margin) * 2));
+  height: calc(100vh - calc(var(--external-margin) * 2));
+  background-color: var(--background-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: var(--external-margin);
+  padding: 25px;
+  border: 1px solid var(--color);
+  /* transition: 0.5s ease-in-out; */
+}
+.nav ul {
+  list-style: none;
+  margin: -20px;
+}
+
+.nav li {
+  font-size: 1.2rem;
+  line-height: 3rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav a:hover {
+  color: var(--color);
+}
+
+.nav_buttons {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  align-self: center;
+
+  /* border: 1px solid red; */
+}
+
+.nav_buttons button {
+  padding: 5px;
+  background-color: var(--color);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  opacity: 1;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.close_btn {
+  padding: 0 !important;
+  position: absolute;
+  top: 52px;
+  right: 42px;
+  transition: 1s;
+}
+
+.animeIn {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: animeIn 0.3s ease forwards;
+}
+
+@keyframes animeIn {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+
+.animeOut {
+  opacity: 1;
+  transform: translateY(0);
+  animation: animeOut 0.3s ease forwards;
+}
+
+@keyframes animeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}

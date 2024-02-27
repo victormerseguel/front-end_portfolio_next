@@ -1,0 +1,39 @@
+.controls_container {
+  position: absolute;
+  bottom: 0;
+  width: fit-content;
+  height: fit-content;
+}
+
+.theme,
+.language {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  z-index: 2;
+}
+
+.theme {
+  rotate: -90deg;
+  bottom: calc(calc(2 * var(--external-margin)) + 5px);
+  left: calc(var(--external-margin) - 70px);
+}
+
+.language {
+  top: calc(var(--external-margin) - 20px);
+  right: calc(var(--external-margin) + 5px);
+  font-size: 0.85rem;
+}
+
+.theme p,
+.language p {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .theme {
+    bottom: calc(3 * var(--external-margin));
+  }
+}

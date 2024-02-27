@@ -1,17 +1,18 @@
 .contact {
   width: 100%;
   max-width: 998px;
-  height: calc(100vh - var(--margin-projects));
+  height: calc(100vh);
   position: absolute;
-  top: 0px;
+  top: 0;
   margin: auto;
   overflow: scroll;
   padding: var(--external-margin);
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: var(--margin-projects);
+
+  z-index: 0;
 }
 .contact h2 {
   text-align: center;
@@ -81,7 +82,8 @@
   width: 100%;
   height: 100%;
   transform-origin: 50% bottom;
-  transform: scaleY(0);
+  transform: translateY(-10px);
+  opacity: 0;
   transition: 0.2s;
   line-height: 1.5rem;
 }
@@ -91,7 +93,8 @@
 }
 
 .mail:hover span {
-  transform: scaleY(100%);
+  transform: translateY(0);
+  opacity: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,8 +104,10 @@
   background-color: rgba(0, 128, 0, 0.407) !important;
 }
 
-@media (max-height: 890px) {
-  .contact {
-    height: 810px;
+@media (max-height: 727px) {
+  .contact_container {
+    position: absolute;
+    top: 200px;
+    padding-bottom: 200px;
   }
 }

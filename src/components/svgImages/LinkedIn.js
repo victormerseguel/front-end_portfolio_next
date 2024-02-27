@@ -6,7 +6,7 @@ const LinkedIn = ({ size, mobile }) => {
       href="https://www.linkedin.com/in/victor-merseguel-770277161"
       target="_blank"
     >
-      <button className={mobile ? styles.hide : null}>
+      <button>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 50 50"

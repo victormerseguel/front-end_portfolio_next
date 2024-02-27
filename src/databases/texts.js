@@ -42,8 +42,8 @@ I have a self-taught profile and love to research and learn on my own. Despite h
 
 export const projects_db = [
   {
-    pt: "Os projetos a seguir são parte do minha trajetória como desenvolvedor Front-End. Aqui estão reunidos projetos de estudo e trabalhos ja realizados. Ao clicar nas imagens, encontrará mais informações sobre cada projeto.",
-    en: "The following projects are part of my journey as a Front-End developer. Here, you'll find a collection of study projects and completed works. By clicking on the images, you'll discover more information about each project.",
+    pt: "Os projetos a seguir são parte da minha trajetória como desenvolvedor Front-End. Aqui estão reunidos trabalhos já realizados e projetos de estudo. Ao clicar nas imagens, encontrará mais informações sobre cada projeto.",
+    en: "The following projects are part of my journey as a Front-End developer. Here, you'll find a collection of completed works and study projects. By clicking on the images, you'll discover more information about each project.",
   },
   {
     pt: "Destaques",
@@ -78,6 +78,12 @@ Finally, I ventured into the world of Front-End when my wife, a therapist and di
     pt: `Clique para copiar`,
     en: `Click to copy`,
   },
+];
+
+export const controls_db = [
+  ["light", "dark"],
+  ["pt", "en"],
+  ["◼", "◻"],
 ];
 
 /*

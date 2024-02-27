@@ -3,7 +3,7 @@
 import styles from "./Nav.module.css";
 
 import { dot, navItems_db, navbar_db } from "@/databases/texts";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Context } from "@/hooks/Context";
 
 import GitHub from "./svgImages/GitHub";
@@ -12,10 +12,39 @@ import MenuMobile from "./svgImages/MenuMobile";
 import Resume from "./svgImages/Resume";
 
 const Nav = () => {
-  const { language, currentMenu, setCurrentMenu, mobile } = useContext(Context);
+  const {
+    language,
+    currentMenu,
+    setCurrentMenu,
+    mobile,
+    setMobile,
+    setMenuMobile,
+    menuMobile,
+    setAnimate,
+  } = useContext(Context);
 
-  const handleClick = (e) => {
-    setCurrentMenu(e.target.id);
+  const resize = () => {
+    if (typeof window !== "undefined") {
+      if (window.innerWidth < 815) {
+        setMobile(true);
+      } else {
+        setMobile(false);
+      }
+    }
+  };
+  useEffect(() => {
+    resize();
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", resize);
+    }
+  });
+
+  const handleClick = () => {
+    setAnimate(true);
+    setMenuMobile(true);
   };
 
   return (
@@ -23,8 +52,9 @@ const Nav = () => {
       <div className={styles.header}>
         <div className={styles.name}>
           <h2>Victor Merseguel</h2>
-          <h3>
-            Front-End Developer -{" "}
+          <h3 className={mobile ? styles.break : null}>
+            Front-End Developer
+            <span className={mobile ? styles.hide : null}> - </span>
             <span className={styles.project_icon}>
               <img src="/assets/img/html-icon.svg" alt="html" />
               <img src="/assets/img/css-icon.svg" alt="css" />
@@ -35,10 +65,10 @@ const Nav = () => {
           </h3>
         </div>
         <div className={styles.nav_buttons}>
-          <GitHub size={32} mobile={mobile} />
-          <LinkedIn size={32} mobile={mobile} />
-          <Resume size={32} mobile={mobile} />
-          <MenuMobile mobile={mobile} />
+          {!mobile && <GitHub size={32} />}
+          {!mobile && <LinkedIn size={32} />}
+          {!mobile && <Resume size={32} />}
+          {mobile && <MenuMobile click={handleClick} />}
         </div>
       </div>
       <ul className={mobile ? styles.hide : null}>
@@ -51,7 +81,7 @@ const Nav = () => {
                   : { cursor: "pointer" }
               }
               id={navItems_db[i]}
-              onClick={(e) => handleClick(e)}
+              onClick={(e) => setCurrentMenu(e.target.id)}
             >
               {currentMenu === navItems_db[i] ? dot : item[language]}
             </p>
