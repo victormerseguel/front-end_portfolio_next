@@ -1,8 +1,12 @@
 import styles from "./Info.module.css";
 
-import { Context } from "@/hooks/Context";
+import { Context } from "@/components/web/hooks/Context";
 import { useContext } from "react";
-import { infos_db, navItems_db, navbar_db } from "@/databases/texts";
+import {
+  infos_db,
+  navItems_db,
+  navbar_db,
+} from "@/components/web/databases/texts";
 
 const Info = () => {
   const { language, currentMenu, setCurrentMenu } = useContext(Context);

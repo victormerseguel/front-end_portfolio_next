@@ -141,3 +141,7 @@
   height: 12px !important;
   align-self: center;
 }
+
+.button {
+  z-index: 200;
+}

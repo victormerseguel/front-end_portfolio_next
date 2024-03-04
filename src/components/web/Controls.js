@@ -1,8 +1,8 @@
 import styles from "./Controls.module.css";
 
 import { useContext, useEffect, useState } from "react";
-import { controls_db } from "@/databases/texts";
-import { Context } from "@/hooks/Context";
+import { controls_db } from "@/components/web/databases/texts";
+import { Context } from "@/components/web/hooks/Context";
 
 const Controls = () => {
   const { language, setLanguage, theme, setTheme } = useContext(Context);

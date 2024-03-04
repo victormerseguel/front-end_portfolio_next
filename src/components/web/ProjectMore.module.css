@@ -1,0 +1,132 @@
+.project_more_container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.808);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: zoom-out;
+}
+
+.project_more_content {
+  max-width: 900px;
+  height: auto;
+  max-height: 80vh;
+  background-color: var(--font-color);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  cursor: default;
+}
+
+.left {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.img_cover {
+  max-width: 450px;
+  height: max-content;
+  margin-top: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.project_more_buttons {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.project_more_buttons button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--background-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  opacity: 0.9;
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  height: 42px;
+}
+
+.project_more_buttons button:hover {
+  opacity: 1;
+}
+
+.a {
+  text-decoration: none;
+  /* align-self: center; */
+}
+
+.more_icons {
+  fill: var(--font-color);
+}
+
+.project_more_content h4,
+.project_more_content p {
+  color: var(--background-color);
+  line-height: 1.8rem;
+}
+
+.project_more_content h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+  text-align: center;
+  padding-right: 30px;
+}
+
+.project_more_content p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.project_more_content .right {
+  position: relative;
+  overflow: scroll;
+}
+
+.project_more_close {
+  position: fixed;
+  top: 7.5vh;
+  right: 5vw;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color);
+  cursor: pointer;
+}
+
+.project_more_close:hover {
+  color: #c63838;
+}
+
+@media (max-width: 910px) {
+  .project_more_content {
+    flex-direction: column;
+    margin: 0 15px;
+    height: max-content;
+    overflow: scroll;
+    max-height: 90vh;
+  }
+
+  .img_cover {
+    max-width: 100%;
+    margin: 15px;
+  }
+
+  .project_more_content .right {
+    overflow: visible !important;
+  }
+}

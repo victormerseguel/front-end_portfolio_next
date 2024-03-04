@@ -1,4 +1,4 @@
-import styles from "../../components/MobileMenu.module.css";
+import styles from "../MobileMenu.module.css";
 
 const CloseBtn = ({ click }) => {
   return (

@@ -1,8 +1,12 @@
 import styles from "./Contacts.module.css";
 
 import { useContext } from "react";
-import { Context } from "@/hooks/Context";
-import { infos_db, navItems_db, navbar_db } from "@/databases/texts";
+import { Context } from "@/components/web/hooks/Context";
+import {
+  infos_db,
+  navItems_db,
+  navbar_db,
+} from "@/components/web/databases/texts";
 import GitHub from "./svgImages/GitHub";
 import LinkedIn from "./svgImages/LinkedIn";
 import Resume from "./svgImages/Resume";

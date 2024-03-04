@@ -1,10 +1,10 @@
 import styles from "./MobileMenu.module.css";
-import animation from "../helpers/animate.module.css";
+import animation from "../web/helpers/animate.module.css";
 
 import { useContext } from "react";
 import CloseBtn from "./svgImages/CloseBtn";
-import { Context } from "@/hooks/Context";
-import { dot, navItems_db, navbar_db } from "@/databases/texts";
+import { Context } from "@/components/web/hooks/Context";
+import { dot, navItems_db, navbar_db } from "@/components/web/databases/texts";
 import GitHub from "./svgImages/GitHub";
 import LinkedIn from "./svgImages/LinkedIn";
 import Resume from "./svgImages/Resume";

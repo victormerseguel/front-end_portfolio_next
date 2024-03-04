@@ -129,6 +129,10 @@
   margin-top: -5px;
 }
 
+.a {
+  text-decoration: none;
+}
+
 @media (max-width: 410px) {
   .name h2 {
     font-size: 1.8rem;

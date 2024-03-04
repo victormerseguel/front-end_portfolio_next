@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  width: 100vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100vh;
+  padding-top: 00px;
+}
+
+.content {
+  position: relative;
+  width: 100vw;
+  max-width: 1000px;
+  height: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}

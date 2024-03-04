@@ -1,6 +1,4 @@
-import { useContext } from "react";
-import styles from "../../components/Nav.module.css";
-import { Context } from "@/hooks/Context";
+import styles from "../Nav.module.css";
 
 const MenuMobile = ({ click }) => {
   return (

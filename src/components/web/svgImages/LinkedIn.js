@@ -1,4 +1,4 @@
-import styles from "../../components/Nav.module.css";
+import styles from "../Nav.module.css";
 
 const LinkedIn = ({ size, mobile }) => {
   return (

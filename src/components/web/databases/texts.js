@@ -86,6 +86,19 @@ export const controls_db = [
   ["◼", "◻"],
 ];
 
+/*----- More Projects -----*/
+
+export const more_db = {
+  project: {
+    pt: "Visualizar projeto",
+    en: "View project",
+  },
+  repository: {
+    pt: "Acessar repositório",
+    en: "Access repository",
+  },
+};
+
 /*
 {
   pt: ``,

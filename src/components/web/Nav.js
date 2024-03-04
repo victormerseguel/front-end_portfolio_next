@@ -2,9 +2,9 @@
 
 import styles from "./Nav.module.css";
 
-import { dot, navItems_db, navbar_db } from "@/databases/texts";
+import { dot, navItems_db, navbar_db } from "@/components/web/databases/texts";
 import { useContext, useEffect } from "react";
-import { Context } from "@/hooks/Context";
+import { Context } from "@/components/web/hooks/Context";
 
 import GitHub from "./svgImages/GitHub";
 import LinkedIn from "./svgImages/LinkedIn";
@@ -19,8 +19,8 @@ const Nav = () => {
     mobile,
     setMobile,
     setMenuMobile,
-    menuMobile,
     setAnimate,
+    theme,
   } = useContext(Context);
 
   const resize = () => {
@@ -60,7 +60,12 @@ const Nav = () => {
               <img src="/assets/img/css-icon.svg" alt="css" />
               <img src="/assets/img/javascript-icon.svg" alt="javascript" />
               <img src="/assets/img/react-icon.svg" alt="react" />
-              <img src="/assets/img/nextjs-icon.svg" alt="next" />
+              <img
+                src={`/assets/img/nextjs${
+                  theme === "light" ? "" : "light"
+                }-icon.svg`}
+                alt="next"
+              />
             </span>
           </h3>
         </div>
