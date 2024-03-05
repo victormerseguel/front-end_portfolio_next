@@ -1,9 +1,5 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { ContextProvider } from "@/components/web/hooks/Context";
-import ProjectMore from "@/components/web/ProjectMore";
-
-const inter = Inter({ subsets: ["latin"] });
+import { ContextProvider } from "@/components/hooks/ContextWeb";
 
 export const metadata = {
   title: "Victor Merseguel",
@@ -12,8 +8,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="pt">
+      <body>
         <ContextProvider>{children}</ContextProvider>
       </body>
     </html>

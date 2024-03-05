@@ -1,7 +1,7 @@
 import styles from "./Projects.module.css";
 
 import { useContext, useRef } from "react";
-import { Context } from "@/components/web/hooks/Context";
+import { Context } from "@/components/hooks/ContextWeb";
 import {
   navItems_db,
   navbar_db,

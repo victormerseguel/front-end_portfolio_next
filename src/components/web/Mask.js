@@ -1,7 +1,7 @@
 "use client";
 import { useContext, useState } from "react";
 import styles from "./Mask.module.css";
-import { Context } from "@/components/web/hooks/Context";
+import { Context } from "@/components/hooks/ContextWeb";
 
 const Mask = () => {
   const { mask, setMask } = useContext(Context);

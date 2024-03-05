@@ -1,7 +1,7 @@
 import styles from "./Projects.module.css";
 
 import { Fragment, forwardRef, useContext, useRef } from "react";
-import { Context } from "@/components/web/hooks/Context";
+import { Context } from "@/components/hooks/ContextWeb";
 import { technologies } from "@/components/web/databases/projectsList";
 import { useRouter } from "next/navigation";
 

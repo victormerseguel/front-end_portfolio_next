@@ -13,7 +13,7 @@ import Contacts from "@/components/web/Contacts";
 import Bars from "@/components/web/Bars";
 import Controls from "@/components/web/Controls";
 import MobileMenu from "@/components/web/MobileMenu";
-import { Context } from "@/components/web/hooks/Context";
+import { Context } from "@/components/hooks/ContextWeb";
 
 export default function Home() {
   const contentRef = useRef();

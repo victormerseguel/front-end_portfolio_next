@@ -2,7 +2,7 @@
 import { useContext, useEffect } from "react";
 import styles from "./ProjectMore.module.css";
 import { more_db } from "./databases/texts";
-import { Context } from "./hooks/Context";
+import { Context } from "../hooks/ContextWeb";
 import { projectsList_db } from "./databases/projectsList";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import ProjectView from "./svgImages/ProjectView";

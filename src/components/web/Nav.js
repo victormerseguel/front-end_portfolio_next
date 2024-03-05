@@ -4,7 +4,7 @@ import styles from "./Nav.module.css";
 
 import { dot, navItems_db, navbar_db } from "@/components/web/databases/texts";
 import { useContext, useEffect } from "react";
-import { Context } from "@/components/web/hooks/Context";
+import { Context } from "@/components/hooks/ContextWeb";
 
 import GitHub from "./svgImages/GitHub";
 import LinkedIn from "./svgImages/LinkedIn";

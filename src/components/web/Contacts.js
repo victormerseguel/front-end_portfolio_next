@@ -1,7 +1,7 @@
 import styles from "./Contacts.module.css";
 
 import { useContext } from "react";
-import { Context } from "@/components/web/hooks/Context";
+import { Context } from "@/components/hooks/ContextWeb";
 import {
   infos_db,
   navItems_db,

@@ -2,7 +2,7 @@
 
 import styles from "./page.module.css";
 
-import { ContextProvider } from "@/components/web/hooks/Context";
+import { ContextProvider } from "@/components/hooks/ContextWeb";
 
 import Canva from "@/components/web/Canva";
 import Mask from "@/components/web/Mask";

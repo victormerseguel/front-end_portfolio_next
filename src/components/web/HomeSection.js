@@ -1,7 +1,7 @@
 import styles from "./HomeSection.module.css";
 
 import { useContext } from "react";
-import { Context } from "@/components/web/hooks/Context";
+import { Context } from "@/components/hooks/ContextWeb";
 import { home_db, navItems_db } from "@/components/web/databases/texts";
 import parse from "html-react-parser";
 

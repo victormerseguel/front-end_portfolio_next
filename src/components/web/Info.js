@@ -1,6 +1,6 @@
 import styles from "./Info.module.css";
 
-import { Context } from "@/components/web/hooks/Context";
+import { Context } from "@/components/hooks/ContextWeb";
 import { useContext } from "react";
 import {
   infos_db,

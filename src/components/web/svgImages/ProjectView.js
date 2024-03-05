@@ -2,7 +2,7 @@ import { useContext } from "react";
 import styles from "../ProjectMore.module.css";
 
 import { more_db } from "../databases/texts";
-import { Context } from "../hooks/Context";
+import { Context } from "../../hooks/ContextWeb";
 
 const ProjectView = ({ size, a }) => {
   const { language } = useContext(Context);
