@@ -7,6 +7,9 @@ import { ContextProvider } from "../../components/hooks/ContextFilm";
 export const metadata = {
   title: "Victor Films",
   description: "",
+  icons: {
+    icon: "/assets/img/faviconfilm.ico",
+  },
 };
 
 export default function Layout({ children }) {

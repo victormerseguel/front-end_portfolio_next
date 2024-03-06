@@ -1,32 +1,36 @@
-// import { orderedFiles } from "../db/files";
-import Video from "../../../components/film/Video";
+"use client";
+import { useEffect } from "react";
+import { orderedFiles } from "../db/files";
 
 import style from "./page.module.css";
-// import { Routes, Route, useNavigate } from "react-router-dom";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Works = () => {
-  // const navigate = useNavigate();
+  const router = useRouter();
 
-  // const handleClick = ({ target }) => {
-  //   const idTarget = !target.id ? target.parentElement.id : target.id;
-  //   document.body.style.overflow = "hidden";
-  //   navigate(`/video/${idTarget.replace("Label", "")}`);
-  // };
+  useEffect(() => {
+    document.body.style.overflow = "scroll";
+  }, []);
 
-  // function showLabel({ target }) {
-  //   const labelDiv = document.querySelector(`#${target.id}Label`);
-  //   labelDiv.classList.remove(style.hide);
-  // }
+  const handleClick = (id) => {
+    document.body.style.overflow = "hidden";
+  };
 
-  // function hideLabel({ target }) {
-  //   const idTarget = !target.id ? target.parentElement.id : target.id;
-  //   const labelDiv = document.querySelector(`#${idTarget}`);
-  //   if (idTarget.includes("Label")) labelDiv.classList.add(style.hide);
-  // }
+  function showLabel({ target }) {
+    const labelDiv = document.querySelector(`#${target.id}Label`);
+    labelDiv.classList.remove(style.hide);
+  }
+
+  function hideLabel({ target }) {
+    const idTarget = !target.id ? target.parentElement.id : target.id;
+    const labelDiv = document.querySelector(`#${idTarget}`);
+    if (idTarget.includes("Label")) labelDiv.classList.add(style.hide);
+  }
 
   return (
-    <div>
-      {/* <div className={style.thumbContainer} id="thumbContainer">
+    <>
+      <div className={style.thumbContainer} id="thumbContainer">
         {orderedFiles.map((file, index) => (
           <div
             key={index}
@@ -41,22 +45,24 @@ const Works = () => {
               alt={file.nome}
               id={file.id}
             />
-            <div
-              className={`${style.description} ${style.hide}`}
-              id={`${file.id}Label`}
-              onClick={(e) => handleClick(e)}
+            <Link
+              href={`/film/works/projects/${file.id}`}
+              onClick={handleClick(file.id)}
+              scroll={false}
             >
-              <h4>{file.descriptType}</h4>
-              <h5>{file.descripTitle}</h5>
-              <h6>{file.descripClient}</h6>
-            </div>
+              <div
+                className={`${style.description} ${style.hide}`}
+                id={`${file.id}Label`}
+              >
+                <h4>{file.descriptType}</h4>
+                <h5>{file.descripTitle}</h5>
+                <h6>{file.descripClient}</h6>
+              </div>
+            </Link>
           </div>
         ))}
       </div>
-      <Routes>
-        <Route path="video/:id" element={<Video />} />
-      </Routes> */}
-    </div>
+    </>
   );
 };
 

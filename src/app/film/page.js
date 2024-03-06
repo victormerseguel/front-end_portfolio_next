@@ -1,7 +1,15 @@
-import styles from "./page.module.css";
+"use client";
+import { useRouter } from "next/navigation";
+import Works from "./works/page";
+import { useEffect } from "react";
 
 const Home = () => {
-  return <div>page</div>;
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push("/film/works");
+  }, []);
+  return <></>;
 };
 
 export default Home;

@@ -1,13 +1,13 @@
-import caterina1 from "../assets/thumb_caterina1.jpg";
-import sbcirco from "../assets/thumb_sbcirco.jpg";
-import leticia from "../assets/thumb_leticia.jpg";
-import square from "../assets/thumb_square.jpg";
-import caterina2 from "../assets/thumb_caterina2.jpg";
-import paineiras from "../assets/thumb_paineiras.jpg";
-import mediotec from "../assets/thumb_mediotec.jpg";
-import saraf from "../assets/thumb_saraf.jpg";
-import xoaluguel from "../assets/thumb_xoaluguel.jpg";
-import serie from "../assets/thumb_serie.jpg";
+const caterina1 = "/assets/img/thumb_caterina1.jpg";
+const sbcirco = "/assets/img/thumb_sbcirco.jpg";
+const leticia = "/assets/img/thumb_leticia.jpg";
+const square = "/assets/img/thumb_square.jpg";
+const caterina2 = "/assets/img/thumb_caterina2.jpg";
+const paineiras = "/assets/img/thumb_paineiras.jpg";
+const mediotec = "/assets/img/thumb_mediotec.jpg";
+const saraf = "/assets/img/thumb_saraf.jpg";
+const xoaluguel = "/assets/img/thumb_xoaluguel.jpg";
+const serie = "/assets/img/thumb_serie.jpg";
 
 const files = [
   {
