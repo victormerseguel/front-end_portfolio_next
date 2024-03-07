@@ -22,9 +22,19 @@
 
 # Film
 
-### Videos to Add
+- criar thumb
 
-- [] Clipe Shakespeare
-- [] Linguiças
-- [] Béradêro
-- [] Lari Finocchiaro
+  - [x] clipe shakespeare
+  - [x] linguiças
+  - [x] beradero
+  - [x] lari finocchiaro
+
+- upload vimeo a partir de 14/03/2024
+
+  - [x] clipe shakespeare - 920570045
+  - [x] linguiças - 920582444
+  - [x] beradero - 920582185
+  - [x] lari finocchiaro - 920582530
+
+- [] test Image Component com width em vw
+- [] testar mouseover no lugar de mouseenter e mouseleave

@@ -8,6 +8,10 @@ const mediotec = "/assets/img/thumb_mediotec.jpg";
 const saraf = "/assets/img/thumb_saraf.jpg";
 const xoaluguel = "/assets/img/thumb_xoaluguel.jpg";
 const serie = "/assets/img/thumb_serie.jpg";
+const facemulher = "/assets/img/thumb_facemulher.jpg";
+const larifinocchiaro = "/assets/img/thumb_larifinocchiaro.jpg";
+const brazilianbutcher = "/assets/img/thumb_brazilianbutcher.jpg";
+const beradero = "/assets/img/thumb_beradero.jpg";
 
 const files = [
   {
@@ -95,7 +99,7 @@ const files = [
     id: "xoaluguel",
     nome: "Xô Aluguel Online",
     imgURL: xoaluguel,
-    patch: "887349801",
+    patch: "920569024",
     descriptType: "Vídeo de Vendas",
     descripTitle: "Xô Aluguel Online",
     descripClient: "ANDUMA Empreendimentos Imobiliários",
@@ -110,6 +114,46 @@ const files = [
     descripTitle: "Mafalda - Ep. 01",
     descripClient: "Caminhos Potentes",
     order: "01",
+  },
+  {
+    id: "facemulher",
+    nome: "A Face de Uma Mulher",
+    imgURL: facemulher,
+    patch: "920570045",
+    descriptType: "Clipe Musical",
+    descripTitle: "A Face de Uma Mulher",
+    descripClient: "Mariane Mattoso e Caio Merseguel",
+    order: "11",
+  },
+  {
+    id: "beradero",
+    nome: "Bèradêro",
+    imgURL: beradero,
+    patch: "920582185",
+    descriptType: "Lyric Video",
+    descripTitle: "Bèradêro",
+    descripClient: "Samanta Okuyama",
+    order: "12",
+  },
+  {
+    id: "brazilianbutcher",
+    nome: "Brazilian Butcher Ads",
+    imgURL: brazilianbutcher,
+    patch: "920582444",
+    descriptType: "Publicidade Redes Sociais",
+    descripTitle: "Brazilian Butcher",
+    descripClient: "Brazilian Butcher",
+    order: "02,5",
+  },
+  {
+    id: "larifinocchiaro",
+    nome: "Lari Finocchiaro",
+    imgURL: larifinocchiaro,
+    patch: "920582530",
+    descriptType: "Tratamento de som e imagem",
+    descripTitle: "Lagrimas de Diamantes",
+    descripClient: "Lari Finocchiaro",
+    order: "06.5",
   },
 ];
 

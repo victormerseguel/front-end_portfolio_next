@@ -429,3 +429,29 @@ pushItems(highlightOrder, highlightDB);
 pushItems(allProjectsOreder, allProjectsDB);
 
 export const technologies = ["html", "css", "javascript", "react", "nextjs"];
+
+const test = [
+  {
+    highlight: true,
+    title: { pt: "Portfólio Videomaker", en: "Videomaker Portfolio" },
+    description: {
+      pt: `Este é um projeto criado para o meu antigo trabalho como videomaker.
+A criação dele foi feita em HTML, CSS e JavaScript pela simplicidade que o projeto exigia, pela otimização de SEO e pela praticidade.
+Este projeto a principio foi criado de maneira desordenada, com conhecimentos básicos em cada uma das linguagens. Na verdade comecei a estudar mesmo, depois da criação deste projeto, porque, por mais que eu tenha um perfil autodidata que me permite realizar muitas coisas, sei que a técnica e o conhecimento correto são muito importante.
+Depois que adquiri conhecimento, decidi refatorar o código, simplificando e aplicando boas práticas, que me permitiram estudar e atestar minha própria evolução. O resultado e a evolução deste projeto podem ser vistos no repositório do github que pode ser acessado pelo botão ao lado (ou acima, dependendo do dispositivo que esteja acessando :)
+O conceito é de uma Single Page, mas que é totalmente manipulada por JavaScript, criando a sensação de navegação entre páginas e interatividade.
+`,
+      en: ``,
+    },
+    technologies: {
+      html: true,
+      css: true,
+      javascript: true,
+      react: true,
+      nextjs: true,
+    },
+    thumb: "",
+    projectURL: prefix + "",
+    githubURL: "",
+  },
+];
