@@ -4,7 +4,7 @@ import { createContext, useState } from "react";
 export const Context = createContext();
 
 export const ContextProvider = ({ children }) => {
-  const [mask, setMask] = useState(false);
+  const [mask, setMask] = useState(true);
   const [language, setLanguage] = useState("pt");
   const [currentMenu, setCurrentMenu] = useState("home");
   const [mobile, setMobile] = useState(false);

@@ -8,15 +8,17 @@
 # Web
 
 - [x] alterar cor do logo NEXTjs de acordo com o tema
-- [] copiar automaticamente o email ao clicar
-- [] hover botões contato
-- [] criar componente que mostra todos os projetos (dinamicamente)
-- [x] - fazer thumb novos projetos
+- [x] copiar automaticamente o email ao clicar
+- [x] hover botões contato
+- [x] criar componente que mostra todos os projetos (dinamicamente)
+- [x] fazer thumb novos projetos
+- [x] responsividade projetos em telas pequenas
 - [] texto novos projetos
-- [] animação background
-- [] responsividade projetos em telas pequenas
 
 - [] quando finalizar colocar a mask
+
+- [] animação background
+- [] arrumar hover das imagens dos projetos aumentando apenas a altura imagem e não a div
 
 <!------------------------------------------>
 
@@ -37,4 +39,4 @@
   - [x] lari finocchiaro - 920582530
 
 - [] test Image Component com width em vw
-- [] testar mouseover no lugar de mouseenter e mouseleave
+- [x] mudar lógica mouseenter e mouseleave

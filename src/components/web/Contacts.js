@@ -1,18 +1,28 @@
 import styles from "./Contacts.module.css";
 
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Context } from "@/components/hooks/ContextWeb";
 import {
   infos_db,
   navItems_db,
   navbar_db,
 } from "@/components/web/databases/texts";
-import GitHub from "./svgImages/GitHub";
-import LinkedIn from "./svgImages/LinkedIn";
-import Resume from "./svgImages/Resume";
+import GitHub from "./svgButtons/GitHub";
+import LinkedIn from "./svgButtons/LinkedIn";
+import Resume from "./svgButtons/Resume";
 
 const Contacts = () => {
   const { language, currentMenu } = useContext(Context);
+  const [mailCopy, setMailCopy] = useState(false);
+  const mail = "merseguel@gmail.com";
+
+  const handleClick = () => {
+    setMailCopy(true);
+    navigator.clipboard.writeText(mail);
+    setTimeout(() => {
+      setMailCopy(false);
+    }, 1500);
+  };
 
   return (
     <>
@@ -21,14 +31,19 @@ const Contacts = () => {
           <div className={styles.contact_container}>
             <h2>{navbar_db[3][language]}</h2>
             <div className={styles.contact_buttons}>
-              <GitHub size={52} />
-              <LinkedIn size={52} />
-              <Resume size={52} />
+              <GitHub size={52} hover />
+              <LinkedIn size={52} hover />
+              <Resume size={52} hover />
             </div>
             <p>{infos_db[2][language]}</p>
-            <p className={styles.mail}>
+            <p className={styles.mail} onClick={handleClick}>
               E-mail: merseguel@gmail.com
-              <span>{infos_db[3][language]}</span>
+              <span
+                className={mailCopy ? styles.copied : ""}
+                onMouseLeave={() => setMailCopy(false)}
+              >
+                {!mailCopy ? infos_db[3][language] : infos_db[4][language]}
+              </span>
             </p>
           </div>
         </section>

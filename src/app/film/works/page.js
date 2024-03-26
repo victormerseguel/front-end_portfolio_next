@@ -5,27 +5,30 @@ import { orderedFiles } from "../db/files";
 import style from "./page.module.css";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const Works = () => {
-  const router = useRouter();
+  const [mouseOverItems, setMouseOverItems] = useState([]);
 
   useEffect(() => {
     document.body.style.overflow = "scroll";
+    orderedFiles.forEach((item, idx) => {
+      mouseOverItems.push(false);
+    });
   }, []);
 
-  const handleClick = (id) => {
+  const handleClick = () => {
     document.body.style.overflow = "hidden";
   };
 
-  function showLabel({ target }) {
-    const labelDiv = document.querySelector(`#${target.id}Label`);
-    labelDiv.classList.remove(style.hide);
+  function showLabel(index) {
+    mouseOverItems[index] = true;
+    setMouseOverItems([...mouseOverItems]);
   }
 
-  function hideLabel({ target }) {
-    const idTarget = !target.id ? target.parentElement.id : target.id;
-    const labelDiv = document.querySelector(`#${idTarget}`);
-    if (idTarget.includes("Label")) labelDiv.classList.add(style.hide);
+  function hideLabel(index) {
+    mouseOverItems[index] = false;
+    setMouseOverItems([...mouseOverItems]);
   }
 
   return (
@@ -36,8 +39,8 @@ const Works = () => {
             key={index}
             className={style.divImg}
             style={{ position: "relative" }}
-            onMouseEnter={(e) => showLabel(e)}
-            onMouseLeave={(e) => hideLabel(e)}
+            onMouseEnter={() => showLabel(index)}
+            onMouseLeave={() => hideLabel(index)}
           >
             <img
               src={file.imgURL}
@@ -47,17 +50,16 @@ const Works = () => {
             />
             <Link
               href={`/film/works/projects/${file.id}`}
-              onClick={handleClick(file.id)}
+              onClick={handleClick}
               scroll={false}
             >
-              <div
-                className={`${style.description} ${style.hide}`}
-                id={`${file.id}Label`}
-              >
-                <h4>{file.descriptType}</h4>
-                <h5>{file.descripTitle}</h5>
-                <h6>{file.descripClient}</h6>
-              </div>
+              {mouseOverItems[index] && (
+                <div className={`${style.description}`} id={`${file.id}Label`}>
+                  <h4>{file.descriptType}</h4>
+                  <h5>{file.descripTitle}</h5>
+                  <h6>{file.descripClient}</h6>
+                </div>
+              )}
             </Link>
           </div>
         ))}

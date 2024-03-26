@@ -7,19 +7,20 @@ const Mask = () => {
   const { mask, setMask } = useContext(Context);
   const [opacity, setOpacity] = useState(true);
   const [title, setTitle] = useState(true);
+  const time = 1000;
 
   const showMask = () => {
     setTimeout(() => {
       setTitle(false);
-    }, 1500);
+    }, time);
 
     setTimeout(() => {
       setOpacity(false);
-    }, 2000);
+    }, time + 500);
 
     setTimeout(() => {
       setMask(false);
-    }, 3000);
+    }, time + 1500);
   };
 
   showMask();

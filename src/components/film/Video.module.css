@@ -37,7 +37,7 @@
   align-items: center;
   /* background-color: #0c0b0cd5; */
   padding: 20px;
-  cursor: zoom-out;
+  cursor: default;
 }
 
 .videoLabel h4 {

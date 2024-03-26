@@ -109,12 +109,15 @@
   align-self: center;
 }
 
-.more_icons {
+.a path {
   fill: var(--font-color);
 }
 
-.contact_buttons button:hover .more_icons {
-  fill: var(--box-background);
+.hover:hover path {
+  fill: var(--background-color);
+}
+.hover:hover {
+  opacity: 0.5;
 }
 
 .hide {

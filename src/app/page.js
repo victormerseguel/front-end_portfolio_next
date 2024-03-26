@@ -18,7 +18,7 @@ import MobileMenu from "@/components/web/MobileMenu";
 export default function Home() {
   return (
     <>
-      <ContextProvider>
+      {/* <ContextProvider>
         <Mask />
         <div className={styles.container}>
           <Canva />
@@ -33,7 +33,7 @@ export default function Home() {
           <Controls />
           <MobileMenu />
         </div>
-      </ContextProvider>
+      </ContextProvider> */}
     </>
   );
 }

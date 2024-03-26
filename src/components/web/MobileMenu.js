@@ -2,12 +2,12 @@ import styles from "./MobileMenu.module.css";
 import animation from "../web/helpers/animate.module.css";
 
 import { useContext } from "react";
-import CloseBtn from "./svgImages/CloseBtn";
+import CloseBtn from "./svgButtons/CloseBtn";
 import { Context } from "@/components/hooks/ContextWeb";
 import { dot, navItems_db, navbar_db } from "@/components/web/databases/texts";
-import GitHub from "./svgImages/GitHub";
-import LinkedIn from "./svgImages/LinkedIn";
-import Resume from "./svgImages/Resume";
+import GitHub from "./svgButtons/GitHub";
+import LinkedIn from "./svgButtons/LinkedIn";
+import Resume from "./svgButtons/Resume";
 
 const MobileMenu = () => {
   const {

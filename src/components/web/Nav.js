@@ -6,10 +6,10 @@ import { dot, navItems_db, navbar_db } from "@/components/web/databases/texts";
 import { useContext, useEffect } from "react";
 import { Context } from "@/components/hooks/ContextWeb";
 
-import GitHub from "./svgImages/GitHub";
-import LinkedIn from "./svgImages/LinkedIn";
-import MenuMobile from "./svgImages/MenuMobile";
-import Resume from "./svgImages/Resume";
+import GitHub from "./svgButtons/GitHub";
+import LinkedIn from "./svgButtons/LinkedIn";
+import MenuMobile from "./svgButtons/MenuMobile";
+import Resume from "./svgButtons/Resume";
 
 const Nav = () => {
   const {

@@ -1,8 +1,6 @@
 "use client";
-import { useState } from "react";
 import style from "./Header.module.css";
 
-import Link from "next/link";
 import NavItem from "./NavItem";
 
 const Header = () => {

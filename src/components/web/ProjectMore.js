@@ -5,8 +5,8 @@ import { more_db } from "./databases/texts";
 import { Context } from "../hooks/ContextWeb";
 import { projectsList_db } from "./databases/projectsList";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import ProjectView from "./svgImages/ProjectView";
-import GitHub from "./svgImages/GitHub";
+import ProjectView from "./svgButtons/ProjectView";
+import GitHub from "./svgButtons/GitHub";
 
 const ProjectMore = () => {
   const { language, project, setProject, setCurrentMenu } = useContext(Context);

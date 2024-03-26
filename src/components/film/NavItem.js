@@ -8,8 +8,8 @@ import { Context } from "../hooks/ContextFilm";
 const NavItem = ({ label, id }) => {
   const { currentMenu, setCurrentMenu } = useContext(Context);
 
-  const handleClickMenu = (e) => {
-    setCurrentMenu(e.target.id);
+  const handleClickMenu = ({ target }) => {
+    target.id === "" ? null : setCurrentMenu(target.id);
   };
   return (
     <li

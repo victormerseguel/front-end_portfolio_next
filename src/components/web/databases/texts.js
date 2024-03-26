@@ -78,6 +78,10 @@ Finally, I ventured into the world of Front-End when my wife, a therapist and di
     pt: `Clique para copiar`,
     en: `Click to copy`,
   },
+  {
+    pt: "E-mail copiado para a área de transferência",
+    en: "E-mail copied to clipboard",
+  },
 ];
 
 export const controls_db = [
