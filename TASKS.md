@@ -15,11 +15,12 @@
 - [x] responsividade projetos em telas pequenas
 - [] texto novos projetos
 
-- [] quando finalizar colocar a mask
+- [x] quando finalizar colocar a mask
 
-- [] consertar z-index contatos
+- [x] consertar z-index contatos
 - [] animação background
 - [] arrumar hover das imagens dos projetos aumentando apenas a altura imagem e não a div
+- [] refazer estrutura com páginas para cada item e não uma troca de conteúdo como está atualmente (/rota)
 
 <!------------------------------------------>
 
