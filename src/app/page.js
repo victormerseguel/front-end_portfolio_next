@@ -2,18 +2,18 @@
 
 import styles from "./page.module.css";
 
-import { ContextProvider } from "@/components/hooks/ContextWeb";
+import { ContextProvider } from "@/app/hooks/ContextWeb";
 
-import Canva from "@/components/web/Canva";
-import Mask from "@/components/web/Mask";
-import Nav from "@/components/web/Nav";
-import HomeSection from "@/components/web/HomeSection";
-import Projects from "@/components/web/Projects";
-import Info from "@/components/web/Info";
-import Contacts from "@/components/web/Contacts";
-import Bars from "@/components/web/Bars";
-import Controls from "@/components/web/Controls";
-import MobileMenu from "@/components/web/MobileMenu";
+import Canva from "@/app/(web)/web/components/Canva";
+import Mask from "@/app/(web)/web/components/Mask";
+import Nav from "@/app/(web)/web/components/Nav";
+import HomeSection from "@/app/(web)/web/components/HomeSection";
+import Projects from "@/app/(web)/web/components/Projects";
+import Info from "@/app/(web)/web/components/Info";
+import Contacts from "@/app/(web)/web/components/Contacts";
+import Bars from "@/app/(web)/web/components/Bars";
+import Controls from "@/app/(web)/web/components/Controls";
+import MobileMenu from "@/app/(web)/web/components/MobileMenu";
 
 export default function Home() {
   return (

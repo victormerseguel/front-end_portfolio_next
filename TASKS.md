@@ -17,6 +17,7 @@
 
 - [] quando finalizar colocar a mask
 
+- [] consertar z-index contatos
 - [] animação background
 - [] arrumar hover das imagens dos projetos aumentando apenas a altura imagem e não a div
 
