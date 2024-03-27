@@ -5,17 +5,13 @@ export const projectsList_db = [
     highlight: true,
     title: { pt: "Portfólio Videomaker", en: "Videomaker Portfolio" },
     description: {
-      pt: `Este é um projeto criado para o meu antigo trabalho como videomaker.
-A criação dele foi feita em HTML, CSS e JavaScript pela simplicidade que o projeto exigia, pela otimização de SEO e pela praticidade.
-Este projeto a principio foi criado de maneira desordenada, com conhecimentos básicos em cada uma das linguagens. Na verdade comecei a estudar mesmo, depois da criação deste projeto, porque, por mais que eu tenha um perfil autodidata que me permite realizar muitas coisas, sei que a técnica e o conhecimento correto são muito importante.
-Depois que adquiri conhecimento, decidi refatorar o código, simplificando e aplicando boas práticas, que me permitiram estudar e atestar minha própria evolução. O resultado e a evolução deste projeto podem ser vistos no repositório do github que pode ser acessado pelo botão ao lado (ou acima, dependendo do dispositivo que esteja acessando :)
-O conceito é de uma Single Page, mas que é totalmente manipulada por JavaScript, criando a sensação de navegação entre páginas e interatividade.
+      pt: `Este projeto foi o início de tudo. Depois que comecei a me aventurar no mundo da programação, o meu primeiro projeto pessoal foi a criação de um portfólio para meus trabalhos como videomaker. Começou com um projeto bagunçado, autodidata, simples em HTML, CSS e JavaScript. Aos poucos foi se transformando, se organizando e hoje faz parte de um portfólio maior, feito em NEXT.js 14, utilizando as últimas funcionalidades que ali se apresentam no momento. 
+      Alguns desafios interessantes foram: criar um modal para cada vídeo, com Route Intercepting e Route Parallel para que ao mesmo tempo fosse possível visualizar cada projeto sem perder a navegação existente, mas também fornecer uma rota única para que cada projeto fosse acessado diretamente; a utilização do componente nativo Image para uma melhor performance de carregamento e cache em servidor, diminuindo o total das requisições imediatas ao acessar o site, fazendo-as apenas quando necessário; além da organização de rotas, uma vez que este projeto está contido numa aplicação maior, que inclui este site em que estamos no momento.
+      Este é um projeto que tenho muito carinho por ser, como mencionado, o início de tudo e ao mesmo tempo um diário de bordo de minha trajetória e evolução no front-end.
 `,
-      en: `This is a project created for my previous job as a videomaker.
-Its development was done in HTML, CSS, and JavaScript due to the simplicity required by the project, SEO optimization, and convenience.
-Initially, this project was created in a somewhat disorganized manner, with basic knowledge of each of the languages. In fact, I began to study in earnest after creating this project because, despite having a self-taught profile that allows me to accomplish many things, I understand that proper technique and knowledge are very important.
-After acquiring knowledge, I decided to refactor the code, simplifying it and applying best practices, which allowed me to study and assess my own progress. The result and evolution of this project can be seen in the GitHub repository, which can be accessed through the button on the side (or above, depending on the device you are using).
-The concept is that of a Single Page, but it is entirely manipulated by JavaScript, creating the sensation of navigating between pages and interactivity.
+      en: `This project was the beginning of everything. After I started venturing into the programming world, my first personal project was creating a portfolio for my work as a videomaker. It began as a messy, self-taught project, simple in HTML, CSS, and JavaScript. Gradually, it evolved and organized itself, and today it's part of a larger portfolio, built in NEXT.js 14, utilizing the latest features available.
+      Some interesting challenges included: creating a modal for each video, with Route Intercepting and Route Parallel so that each project could be viewed without losing existing navigation, while also providing a unique route for direct access to each project; using the native Image component for better loading performance and server-side caching, reducing total immediate requests when accessing the site, making them only when necessary; in addition to route organization, as this project is contained within a larger application, which includes the site we're currently on.
+      This is a project I hold dear because it's, as mentioned, the beginning of everything and at the same time a logbook of my journey and evolution in front-end development.
 `,
     },
     technology: {
@@ -26,7 +22,7 @@ The concept is that of a Single Page, but it is entirely manipulated by JavaScri
       nextjs: true,
     },
     thumb: "project-portfolio.jpg",
-    projectURL: prefix + "videomaker-portfolio",
+    projectURL: "https://victormerseguel.com/film",
     githubURL: "https://github.com/victormerseguel/victor-portfolio",
   },
   {
@@ -48,7 +44,7 @@ The goal was to get as close as possible to the reference, but some elements nee
       nextjs: false,
     },
     thumb: "project-iphone14.jpg",
-    projectURL: prefix + "iphone14-clone",
+    projectURL: "https://iphone14-clone-vic.vercel.app/",
     githubURL: "https://github.com/victormerseguel/iphone14_clone",
   },
   {
@@ -96,7 +92,7 @@ In addition to creating shapes, this project adapts to different screen sizes, b
       nextjs: false,
     },
     thumb: "project-sketch1.jpg",
-    projectURL: prefix + "sketch01",
+    projectURL: "https://sketch01.vercel.app",
     githubURL: "https://github.com/victormerseguel/sketch01",
   },
 
@@ -104,7 +100,10 @@ In addition to creating shapes, this project adapts to different screen sizes, b
 
   {
     highlight: false,
-    title: { pt: "Calculadora IMC em React", en: "IMC Calculator in React" },
+    title: {
+      pt: "Calculadora IMC em React",
+      en: "IMC Calculator in React",
+    },
     description: {
       pt: `Este projeto foi realizado de duas maneiras diferentes, uma em Vanilla JavaScript e outro em React.js.
 O propósito deste trabalho foi exercitar e estudar as semelhanças e diferenças de tecnologias semelhantes e as funcionalidades do uso de Libs e Frameworks.
@@ -125,7 +124,7 @@ It is a rather simple project but very interesting for practicing basic concepts
       nextjs: false,
     },
     thumb: "project-imc.jpg",
-    projectURL: prefix + "imc-react",
+    projectURL: "https://imc-calculator-react-psi.vercel.app",
     githubURL: "https://github.com/victormerseguel/imc_calculator_react",
   },
   {
@@ -150,7 +149,7 @@ In this particular project, the focus is on HTML and CSS, with a small amount of
       nextjs: false,
     },
     thumb: "project-instagram.jpg",
-    projectURL: prefix + "instagram-login",
+    projectURL: "https://instagram-login-clone-vert.vercel.app",
     githubURL: "https://github.com/victormerseguel/instagram_login_clone",
   },
   {
@@ -173,7 +172,7 @@ Additionally, the Quiz offers the choice of 3 themes, with hints for each questi
       nextjs: false,
     },
     thumb: "project-quiz.jpg",
-    projectURL: prefix + "quiz-dev",
+    projectURL: "https://quiz-app-react-kohl-phi.vercel.app",
     githubURL: "https://github.com/victormerseguel/quiz_app_react",
   },
   // {
@@ -234,7 +233,7 @@ Additionally, there is a button to copy the generated password to facilitate its
       nextjs: false,
     },
     thumb: "project-password.jpg",
-    projectURL: prefix + "password-generator",
+    projectURL: "https://password-generator-five-nu.vercel.app",
     githubURL: "https://github.com/victormerseguel/password-generator",
   },
   {
@@ -255,7 +254,7 @@ It is simple but quite interesting!
       nextjs: false,
     },
     thumb: "project-qrcode.jpg",
-    projectURL: prefix + "qrcode-generator",
+    projectURL: "https://qrcode-generator-seven-virid.vercel.app",
     githubURL: "https://github.com/victormerseguel/password-generator",
   },
   // {
@@ -296,7 +295,7 @@ The result of the control change generates a rule that just needs to be copied a
       nextjs: false,
     },
     thumb: "project-boxshadow.jpg",
-    projectURL: prefix + "boxshadow-generator",
+    projectURL: "https://box-shadow-generator-gamma.vercel.app",
     githubURL: "https://github.com/victormerseguel/box-shadow_generator",
   },
   {
@@ -320,7 +319,7 @@ However, unlike most projects, this one has some unique features such as the sea
       nextjs: false,
     },
     thumb: "project-todo.jpg",
-    projectURL: prefix + "todolist",
+    projectURL: "https://advanced-todo-list-localstorage.vercel.app",
     githubURL:
       "https://github.com/victormerseguel/advanced_todo_list_localstorage",
   },
@@ -347,7 +346,7 @@ It is a rather simple project but very interesting for practicing basic concepts
       nextjs: false,
     },
     thumb: "project-imc.jpg",
-    projectURL: prefix + "imc-js",
+    projectURL: "https://imc-calculator-js.vercel.app",
     githubURL: "https://github.com/victormerseguel/imc_calculator_js",
   },
   {
@@ -357,8 +356,12 @@ It is a rather simple project but very interesting for practicing basic concepts
       en: "L'Onde - Carole Mac Veigh",
     },
     description: {
-      pt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam delectus maxime cum quae, non eius veritatis commodi eligendi quos nisi, fuga explicabo corporis! Cumque quod eos distinctio voluptas accusamus.",
-      en: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam delectus maxime cum quae, non eius veritatis commodi eligendi quos nisi, fuga explicabo corporis! Cumque quod eos distinctio voluptas accusamus.",
+      pt: `Esta é uma aplicação criada em React para a divulgação e exposição dos serviços oferecidos pela cliente. Com design moderno e ao mesmo tempo feminino, as funcionalidades da aplicação são simples, mas eficazes também.
+      Partindo do conceito de one page, houveram pontos importantes de trabalho para esta aplicação como a possibilidade de seleção de língua com a opção armazenada em localStorage para futuros acessos, integração de formulários com EmailJS, alimentação dinâmica de dados facilitando futuras alterações e manutenção, além de abordagens de técnicas de SEO como a inserção do atributo hreflang para as alternativas de rotas para cada língua.
+      Como meta de melhoramento, o intuito é futuramente migrar a aplicação para o Next.js para melhorar o SEO e otimizar ainda mais seu posicionamento para os mecanismos de busca.`,
+      en: `This is an application created in React to promote and showcase the services offered by the client. With a modern yet feminine design, the application's functionalities are simple yet effective as well.
+      Based on the one-page concept, there were important points of work for this application such as the possibility of language selection with the option stored in localStorage for future accesses, integration of forms with EmailJS, dynamic data feeding facilitating future changes and maintenance, as well as SEO techniques approaches like the insertion of the hreflang attribute for alternate routes for each language.
+      As an improvement goal, the intention is to eventually migrate the application to Next.js to improve SEO and further optimize its positioning for search engines.`,
     },
     technology: {
       html: true,
@@ -369,7 +372,7 @@ It is a rather simple project but very interesting for practicing basic concepts
     },
     thumb: "project-carolemacveigh.jpg",
     projectURL: "https://www.guialonde.com",
-    githubURL: "#",
+    githubURL: "https://github.com/victormerseguel/londe-carolemacveigh",
   },
   {
     highlight: true,
@@ -378,8 +381,10 @@ It is a rather simple project but very interesting for practicing basic concepts
       en: "Luciana Castellano",
     },
     description: {
-      pt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam delectus maxime cum quae, non eius veritatis commodi eligendi quos nisi, fuga explicabo corporis! Cumque quod eos distinctio voluptas accusamus.",
-      en: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam delectus maxime cum quae, non eius veritatis commodi eligendi quos nisi, fuga explicabo corporis! Cumque quod eos distinctio voluptas accusamus.",
+      pt: `Criado em Next.js 14 para otimização de SEO e performance de carregamento, esta aplicação foi criada para a apresentação dos trabalhos e serviços oferecidos pela cliente de forma elegante, organizada e eficiente. Com um design, também criado por mim, que buscasse uma conexão com o usuário, esta aplicação pretende servir de vitrine e resultado de buscas pelos mecanismos especializados, além de hospedar paginas de vendas e capturas para eventuais trabalhos oferecidos pela cliente. 
+      Com grande potencial de escala, mesmo que com funcionalidades simples, a escolha do framework Next.js 14 se mostrou bastante acertada para atualizações futuras. `,
+      en: `Created in Next.js 14 for SEO optimization and loading performance, this application was created to present the client's work and services in an elegant, organized, and efficient manner. With a design, also created by me, that sought a connection with the user, this application aims to serve as a showcase and search engine result for specialized mechanisms, as well as hosting sales pages and captures for eventual jobs offered by the client.
+      With great potential for scale, even with simple features, the choice of the Next.js 14 framework proved to be quite appropriate for future updates.`,
     },
     technology: {
       html: true,
@@ -389,8 +394,8 @@ It is a rather simple project but very interesting for practicing basic concepts
       nextjs: true,
     },
     thumb: "project-lucianacastellano.jpg",
-    projectURL: "#",
-    githubURL: "#",
+    projectURL: "https://luciana-castellano.vercel.app",
+    githubURL: "https://github.com/victormerseguel/luciana-castellano-next",
   },
 ];
 
@@ -401,7 +406,7 @@ export const highlightOrder = [
   "Página de Captura",
 ];
 
-export const allProjectsOreder = [
+export const allProjectsOrdered = [
   "iPhone 14 - Page Clone",
   "Animação",
   "Calculadora IMC em React",
@@ -426,7 +431,7 @@ const pushItems = (db, DB) => {
 };
 
 pushItems(highlightOrder, highlightDB);
-pushItems(allProjectsOreder, allProjectsDB);
+pushItems(allProjectsOrdered, allProjectsDB);
 
 export const technologies = ["html", "css", "javascript", "react", "nextjs"];
 

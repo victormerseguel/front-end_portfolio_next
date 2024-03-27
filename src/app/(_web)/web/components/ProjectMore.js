@@ -8,6 +8,8 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import ProjectView from "../svgButtons/ProjectView";
 import GitHub from "../svgButtons/GitHub";
 
+import { normalizeParams } from "./ProjectsMap";
+
 const ProjectMore = () => {
   const { language, project, setProject, setCurrentMenu } = useContext(Context);
   const nameProject = usePathname().replace("/web/projects/", "");
@@ -16,7 +18,8 @@ const ProjectMore = () => {
 
   useEffect(() => {
     projectsList_db.map((item) => {
-      if (item.thumb === nameProject + ".jpg") setProject(item);
+      if (normalizeParams(item.title[language]) === nameProject)
+        setProject(item);
     });
   }, [project]);
 

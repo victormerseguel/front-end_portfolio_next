@@ -14,6 +14,7 @@
 - [x] fazer thumb novos projetos
 - [x] responsividade projetos em telas pequenas
 - [] texto novos projetos
+- [] atualizar currículo
 
 - [x] quando finalizar colocar a mask
 
