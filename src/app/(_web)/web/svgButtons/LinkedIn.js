@@ -3,7 +3,7 @@ import styles from "../components/Nav.module.css";
 const LinkedIn = ({ size, hover }) => {
   return (
     <a
-      href="https://www.linkedin.com/in/victor-merseguel-770277161"
+      href="https://www.linkedin.com/in/victor-merseguel"
       target="_blank"
       className={hover ? `${styles.a} ${styles.hover}` : styles.a}
     >
