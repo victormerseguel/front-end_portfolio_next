@@ -8,7 +8,7 @@ const Canva = () => {
   return (
     <div className={styles.background}>
       <canvas ref={canvasRef}></canvas>
-      <Sketch ref={canvasRef} />
+      {/* <Sketch ref={canvasRef} /> */}
     </div>
   );
 };
