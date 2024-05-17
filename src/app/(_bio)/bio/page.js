@@ -46,7 +46,9 @@ const Bio = () => {
         </h2>
       </header>
       <nav className={styles.links}>
-        <button>Vídeos</button>
+        <Link href={"/film/works"}>
+          <button>Vídeos</button>
+        </Link>
         <Link href={"/web"}>
           <button>Websites</button>
         </Link>
