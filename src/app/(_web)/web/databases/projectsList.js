@@ -397,6 +397,30 @@ It is a rather simple project but very interesting for practicing basic concepts
     projectURL: "https://luciana-castellano.vercel.app",
     githubURL: "https://github.com/victormerseguel/luciana-castellano-next",
   },
+  {
+    highlight: true,
+    title: {
+      pt: "Studio Espectro",
+      en: "Studio Espectro",
+    },
+    description: {
+      pt: `Trata-se de uma aplicação extremamente simples mas com uma peculiaridade. Este design foi criado por uma artista plástica, não por uma UI/UX Designer, o que resultou num layout bastante interessante, mas um tanto complexo de se traduzir em códigos porque não segue uma lógica conhecida no mercado. 
+      O desafio então foi criar um código limpo, com semântica e boas práticas, mas que também fosse pixel-perfect, sem que houvessem distorções ou alterações na arte original.`,
+      en: `This is a very simple application, but with a unique characteristic. The design was created by a visual artist rather than a UI/UX designer, resulting in an interesting layout that is somewhat complex to translate into code, as it does not follow conventional market logic.
+
+      The challenge was to create clean code with proper semantics and best practices, while also ensuring it was pixel-perfect, without any distortions or alterations to the original artwork.`,
+    },
+    technology: {
+      html: true,
+      css: true,
+      javascript: true,
+      react: true,
+      nextjs: true,
+    },
+    thumb: "project-studioespectro.jpg",
+    projectURL: "https://studioespectro.com",
+    githubURL: "https://github.com/studioespectro/studio_espectro",
+  },
 ];
 
 export const highlightOrder = [
@@ -404,6 +428,7 @@ export const highlightOrder = [
   "L'Onde - Carole Mac Veigh",
   "Portfólio Videomaker",
   "Página de Captura",
+  "Studio Espectro",
 ];
 
 export const allProjectsOrdered = [
